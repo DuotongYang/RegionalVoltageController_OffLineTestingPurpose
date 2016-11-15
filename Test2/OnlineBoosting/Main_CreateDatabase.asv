@@ -1,0 +1,4 @@
+clear all;
+close all;
+xtrainName,ytrainName,xtestName,ytestName
+[dataClass, RatioInsecureOCInStableOC] = CreateDatabaseforTrainingAndTesting(0.6,'databaseMeasurements_topologyChange.csv','database_OC_PostControl_16.csv',xtrainName,ytrainName,xtestName,ytestName);
