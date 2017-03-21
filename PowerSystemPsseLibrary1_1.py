@@ -3,7 +3,8 @@
 # Author: Duotong Yang                                                  #
 # Version 1.1                                                           #
 # Modified date: 20170320                                               #
-# Modified: Removed redundant functions                                 #
+# Modified: Removed redundant functions
+#Change for github
 #-----------------------------------------------------------------------#
 
 # Region [Initialization]
