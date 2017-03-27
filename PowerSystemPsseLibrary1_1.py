@@ -13,22 +13,14 @@ from contextlib import contextmanager
 import os,sys, os.path, csv,pdb, time, operator
 PSSE_LOCATION_34 = r"""C:\Program Files (x86)\PTI\PSSE34\PSSPY27"""
 sys.path.append(PSSE_LOCATION_34)
-import psse34, psspy
-import random, pdb, time
+import psse34, psspy,random, pdb, time,difflib,pdb,scipy,heapq,itertools 
 import numpy as np
-import difflib
-import pdb
-import scipy
-import heapq
-import itertools
 from scipy import special,optimize
 from scipy.sparse import bsr_matrix
 from numpy import genfromtxt,max
 import matplotlib.pyplot as plt
 
-
 # endregion
-
 
 #region
 ##################################
@@ -79,14 +71,29 @@ def findFixedShunt(bus):
 
     return FixedShunt
 
+def getGenReactivePowerOutput(busNumber):
+    psspy.bsys(sid=0, numbus=len(busNumber), buses=busNumber)
+    ierr,reactivePowerOutput = psspy.agenbusreal(0,1,'QGEN')
+    return reactivePowerOutput[0]
+
+def getGenReactivePowerMax(busNumber):
+    psspy.bsys(sid=0, numbus=len(busNumber), buses=busNumber)
+    ierr,reactivePowerMax = psspy.agenbusreal(0,1,'QMAX')
+    return reactivePowerMax[0]
+
+def getGenReactivePowerMin(busNumber):
+    psspy.bsys(sid=0, numbus=len(busNumber), buses=busNumber)
+    ierr,reactivePowerMin = psspy.agenbusreal(0,1,'QMIN')
+    return reactivePowerMin[0]
+
+
+
 # endregion
 
-#region
-##################################
-#  Get the System Measurement
-##################################
-     
-        
+
+#############################
+#region [Get the System Measurement]
+#############################
 def getMeasurements(buses):
     psspy.bsys(sid = 1,numbus = len(buses), buses = buses)
     ierr,bus_voltage = psspy.abusreal(1,1,['PU'])
@@ -97,11 +104,27 @@ def getMeasurements(buses):
 
 #endregion
 
-#region
-##################################
-#  Control the system
-##################################
-     
+#############################
+#region [ Change System Data ]
+#############################
+
+def changeOwnerNumber(clusters):
+    """
+        clusters is a dictionary
+        Changes the bus owner number based on clusters' key
+    """
+    area_num = 2 # 1 is the default area_num. area_num starts from 2
+    for key in clusters.keys():
+        for bus in clusters[key]:
+            psspy.bus_data_3(bus, intgar4 = area_num)
+        area_num += 1
+
+#endregion
+
+
+#############################
+#region [Control the system]
+#############################
 def change_load(load_bus,percentage,status):
     psspy.bsys(0,0,[0.0,0.0],0,[],len(load_bus),load_bus,0,[],0,[])
     psspy.scal(sid = 0,all = 0, apiopt = 0,status1 = 2, status3 = 1, status4 = 1, scalval1 = percentage)
@@ -122,22 +145,7 @@ def control_cap(busNumber,MVAR):
 
 #endregion
 
-#region
-##################################
-#  PSSE Visualization
-##################################
-
-
-
-#endregion
-
-
-#region
-##################################
-#  PSSE Functions
-##################################
-
-
+#region [Analysis Functions]
 def QVAnalysis(CASE,ireg,activateplot):
 
     busno = 44999 # Fictitious generator bus
@@ -146,7 +154,7 @@ def QVAnalysis(CASE,ireg,activateplot):
     pgen = 0.0 # Fict gen P output
     Qlimit = 9999.0 # Fict. gen Q limit
     pmax = 0.0 # Fict gen P limit
-
+    
     #--------------------------------
 
     def add_machine():
@@ -174,26 +182,57 @@ def QVAnalysis(CASE,ireg,activateplot):
             return mvar
         else:
             return None
-
+        
+    def get_genExhausted(pv):
+        """
+        get the number of gen whose reactive power got exhausted.
+        """
+        genExhausted = []
+        GenReactivePowerOutput = getGenReactivePowerOutput(pv)
+        GenReactivePowerMax = getGenReactivePowerMax(pv)
+        GenReactivePowerMin = getGenReactivePowerMin(pv)
+        for i in range(0,len(pv)):
+            if GenReactivePowerOutput[i] == GenReactivePowerMax[i] \
+               or GenReactivePowerOutput[i] == GenReactivePowerMin[i]:
+                genExhausted.append(pv[i])
+        return genExhausted
+        
+    
     psspy.psseinit(12000)
     psspy.case(CASE)
     psspy.solution_parameters_3(intgar2=60) # set number of solution iterations.
 
     psspy.bus_data_2(busno, intgar1=2, name='TEST')
     psspy.branch_data(i=busno, j=ireg)
+    all_bus = findAllBuses()
+    pq,pv,slackBus = findAllBusType(all_bus)
     add_machine()
+
+    
+    # get gen that exhausted its reactive power    
+    genExhausted_old = get_genExhausted(pv) 
 
     pu = [x for x in np.arange(1.0, 0.2, -0.005)]
     varlist = []
     voltagelist = []
+    
     for v in pu:
         res = get_mvar(v)
         if res:
+            psspy.save("temp")
             varlist.append(res)
             voltagelist.append(v)
         else:
             break
 
+    # get new gen that exhausted its reactive power
+    psspy.case("temp")
+    busGenExhausted = []
+    genExhausted_new = get_genExhausted(pv)
+    for bus in genExhausted_new:
+        if bus not in genExhausted_old:
+            busGenExhausted.append(bus)
+                
     QminIndex = np.argmin(varlist)
     Qmin = varlist[QminIndex]
     Vmin = voltagelist[QminIndex]
@@ -205,6 +244,6 @@ def QVAnalysis(CASE,ireg,activateplot):
         plt.ylabel('MVar')
         plt.grid()
 
-    return Qmin,Vmin
+    return Qmin,Vmin,busGenExhausted
 
 #endregion

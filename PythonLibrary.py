@@ -6,8 +6,7 @@
 #                                                                       #
 #-----------------------------------------------------------------------#
 
-import csv
-import os
+import csv,difflib,os,operator
 
 def writeRowToCsv(csvfileName,data):
     ########
@@ -48,8 +47,21 @@ def isFileExist(filename):
         return True
 
 def MergeKeysWithSameValue(dic):
-    dic2 = {tuple(y): x for x, y in dic.items()}
+    dic2 = {}
+    for key in dic.keys():
+        if dic2.has_key(dic[key]):
+            dic2[dic[key]].append(key)
+        else:
+            dic2[dic[key]] = [key]
     return dic2
+
+def ComputeSimilarityTwoLists(s1,s2):
+    sm = difflib.SequenceMatcher(None,s1,s2)
+    return sm.ratio()
+
+def NormalizeList(data):
+    dataNormalized = [operator.truediv((float(i) - min(data)),(max(data) - min(data))) for i in data]
+    return dataNormalized
 
 ########################
 # python run matlab
