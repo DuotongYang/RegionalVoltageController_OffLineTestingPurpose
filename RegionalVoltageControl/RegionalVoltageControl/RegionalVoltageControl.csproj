@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,45 +43,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\Edge.cs">
-      <Link>Graphs\Edge.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\EdgeList.cs">
-      <Link>Graphs\EdgeList.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\IGraphable.cs">
-      <Link>Graphs\IGraphable.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\NetworkGraph.cs">
-      <Link>Graphs\NetworkGraph.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\SubstationGraph.cs">
-      <Link>Graphs\SubstationGraph.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\TransmissionLineGraph.cs">
-      <Link>Graphs\TransmissionLineGraph.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\Tree.cs">
-      <Link>Graphs\Tree.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\TreeNode.cs">
-      <Link>Graphs\TreeNode.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\TreeNodeList.cs">
-      <Link>Graphs\TreeNodeList.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\Vertex.cs">
-      <Link>Graphs\Vertex.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\VertexAdjacencyList.cs">
-      <Link>Graphs\VertexAdjacencyList.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\VertexAdjacencyRow.cs">
-      <Link>Graphs\VertexAdjacencyRow.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Google Drive\researches\cloud Linear State Estimator\Final folder in Dominion room desktop\final folder\source_code_kevin%27smodification\SynchrophasorAnalytics\SynchrophasorAnalytics\Graphs\VertexCluster.cs">
-      <Link>Graphs\VertexCluster.cs</Link>
-    </Compile>
+    <Compile Include="Adapters\RegionalVoltageController.cs" />
+    <Compile Include="Measurement\BreakerStatus.cs" />
+    <Compile Include="Measurement\BreakerStatusBit.cs" />
+    <Compile Include="Measurement\ComplexPowerGroup.cs" />
+    <Compile Include="Measurement\CurrentFlowPhasorGroup.cs" />
+    <Compile Include="Measurement\CurrentInjectionDirectionConvention.cs" />
+    <Compile Include="Measurement\CurrentInjectionPhasorGroup.cs" />
+    <Compile Include="Measurement\IClearable.cs" />
+    <Compile Include="Measurement\IPhasor.cs" />
+    <Compile Include="Measurement\IPowerCalculatable.cs" />
+    <Compile Include="Measurement\Phasor.cs" />
+    <Compile Include="Measurement\PhasorBase.cs" />
+    <Compile Include="Measurement\PhasorBaseSerializationConditions.cs" />
+    <Compile Include="Measurement\PhasorEstimate.cs" />
+    <Compile Include="Measurement\PhasorGroup.cs" />
+    <Compile Include="Measurement\PhasorMeasurement.cs" />
+    <Compile Include="Measurement\PhasorType.cs" />
+    <Compile Include="Measurement\StatusWord.cs" />
+    <Compile Include="Measurement\StatusWordBit.cs" />
+    <Compile Include="Measurement\StatusWordSerializeConditions.cs" />
+    <Compile Include="Measurement\VoltagePhasorGroup.cs" />
     <Compile Include="Modeling\CircuitBreaker.cs" />
     <Compile Include="Modeling\Company.cs" />
     <Compile Include="Modeling\Division.cs" />
@@ -111,11 +94,15 @@
     <Compile Include="Modeling\TransformerConnectionType.cs" />
     <Compile Include="Modeling\TransmissionLine.cs" />
     <Compile Include="Modeling\VoltageLevel.cs" />
+    <Compile Include="NetworkModel\NetworkModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

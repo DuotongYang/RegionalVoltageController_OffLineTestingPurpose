@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.IO;
 using System.Collections;
-using SynchrophasorAnalytics.Modeling;
-
+using RegionalVoltageControl
 
 namespace RegionalVoltageControl
 {
@@ -34,6 +33,7 @@ namespace RegionalVoltageControl
 			}
 
 		}
+
 
 
 		#endregion

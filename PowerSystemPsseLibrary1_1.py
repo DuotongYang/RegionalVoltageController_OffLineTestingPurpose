@@ -125,7 +125,7 @@ def changeOwnerNumber(clusters):
 #############################
 #region [Control the system]
 #############################
-def change_load(load_bus,percentage,status):
+def change_load(load_bus,percentage):
     psspy.bsys(0,0,[0.0,0.0],0,[],len(load_bus),load_bus,0,[],0,[])
     psspy.scal(sid = 0,all = 0, apiopt = 0,status1 = 2, status3 = 1, status4 = 1, scalval1 = percentage)
 
