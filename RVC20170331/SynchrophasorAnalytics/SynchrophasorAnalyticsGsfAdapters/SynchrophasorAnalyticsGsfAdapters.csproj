@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6B04E063-6452-4B0B-80BB-6034C238EA02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SynchrophasorAnalyticsGsfAdapters</RootNamespace>
+    <AssemblyName>SynchrophasorAnalyticsGsfAdapters</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GSF.ASN1">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.ASN1.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Communication">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Communication.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.COMTRADE">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.COMTRADE.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Core, Version=2.0.110.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Historian">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Historian.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Media">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.MMS">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.MMS.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Net">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.PhasorProtocols, Version=2.0.110.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.PhasorProtocols.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.PhasorProtocols.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.PhasorProtocols.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.PhasorProtocols.UI.WPF">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.PhasorProtocols.UI.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Security">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.ServiceBus">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.ServiceModel">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.ServiceModel.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.ServiceProcess">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.ServiceProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.TimeSeries, Version=2.0.110.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.TimeSeries.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.TimeSeries.Transport.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.TimeSeries.Transport.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.TimeSeries.Transport.UI.WPF">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.TimeSeries.Transport.UI.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.TimeSeries.UI">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.TimeSeries.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.TimeSeries.UI.WPF">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.TimeSeries.UI.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Web">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="GSF.Windows">
+      <HintPath>..\..\..\..\..\..\..\Program Files\openPDC\GSF.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapters\AngleRotation.cs" />
+    <Compile Include="Adapters\DropoutInjector.cs" />
+    <Compile Include="Adapters\LinearStateEstimator.cs" />
+    <Compile Include="Adapters\MeasurementMapping.cs" />
+    <Compile Include="Adapters\MeasurementSampler.cs" />
+    <Compile Include="Adapters\NoiseInjector.cs" />
+    <Compile Include="Adapters\PhasorSignalConditioner.cs" />
+    <Compile Include="Adapters\SignalToNoiseRatioCalculator.cs" />
+    <Compile Include="Adapters\SnapshotManager.cs" />
+    <Compile Include="Snr\MovingWindow.cs" />
+    <Compile Include="Snr\SnrMeasurementType.cs" />
+    <Compile Include="Snr\SnrMovingWindow.cs" />
+    <Compile Include="Snr\SnrMovingWindowCollection.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SynchrophasorAnalytics\SynchrophasorAnalytics.csproj">
+      <Project>{7e806a7d-20c8-4cde-a1f8-4a92d1bc89f4}</Project>
+      <Name>SynchrophasorAnalytics</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Dependencies\GSF.Core.dll" />
+    <Content Include="Dependencies\GSF.PhasorProtocols.dll" />
+    <Content Include="Dependencies\GSF.TimeSeries.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

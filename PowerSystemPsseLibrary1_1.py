@@ -113,10 +113,10 @@ def changeOwnerNumber(clusters):
         clusters is a dictionary
         Changes the bus owner number based on clusters' key
     """
-    area_num = 2 # 1 is the default area_num. area_num starts from 2
+    area_num = 1 # 1 is the default area_num. area_num starts from 2
     for key in clusters.keys():
         for bus in clusters[key]:
-            psspy.bus_data_3(bus, intgar4 = area_num)
+            ierr = psspy.bus_data_3(bus, intgar2 = area_num)
         area_num += 1
 
 #endregion
@@ -131,7 +131,7 @@ def change_load(load_bus,percentage):
 
 def change_gen(gen_bus,percentage):
     psspy.bsys(0,0,[0.0,0.0],0,[],len(gen_bus),gen_bus,0,[],0,[])
-    psspy.scal(sid = 0,all = 0, apiopt = 0,status1 = 3, scalval2 = percentage)
+    psspy.scal(sid = 0,all = 0, apiopt = 0,status1 = 2, scalval2 = percentage)
 
 def LoadIncreaseMW(load_bus,percentage):
     psspy.bsys(0,0,[0.0,0.0],0,[],len(load_bus),load_bus,0,[],0,[])
