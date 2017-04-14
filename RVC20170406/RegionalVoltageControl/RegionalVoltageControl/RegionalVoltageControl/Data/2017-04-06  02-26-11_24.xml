@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Network xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Voltages>
+    <Phasor Uid="30790e65-ac66-4ef9-98a8-eaa95b4ef17e">
+      <Measurement BaseKV="0" Magnitude="0.94648" Angle="0" MagnitudeKey="1" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="e8c9df3c-331f-40b8-9a3b-e66198081b87">
+      <Measurement BaseKV="0" Magnitude="0.9555" Angle="0" MagnitudeKey="2" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="d9386e59-5309-46b5-a7e3-0a46cb4ef011">
+      <Measurement BaseKV="0" Magnitude="0.95444" Angle="0" MagnitudeKey="3" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="fcc99618-5b81-419c-9541-05a5febc3ef0">
+      <Measurement BaseKV="0" Magnitude="0.998" Angle="0" MagnitudeKey="4" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="a23e215d-8837-48ea-a92b-b9ab7bdd02cd">
+      <Measurement BaseKV="0" Magnitude="1.0001" Angle="0" MagnitudeKey="5" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2c7f2a7c-0e49-46a4-b1d0-e63549a560fc">
+      <Measurement BaseKV="0" Magnitude="0.99" Angle="0" MagnitudeKey="6" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="f6d4ebd9-78a3-4317-8a65-ebf08023eda0">
+      <Measurement BaseKV="0" Magnitude="0.98449" Angle="0" MagnitudeKey="7" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2b805972-dab8-4b15-a5af-a548f4886ff1">
+      <Measurement BaseKV="0" Magnitude="1.0105" Angle="0" MagnitudeKey="8" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2fa144b6-4244-42c5-b7fe-6d39bc6a146a">
+      <Measurement BaseKV="0" Magnitude="1.0156" Angle="0" MagnitudeKey="9" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="87f9294f-3d1b-4723-a9ae-bf00408086b9">
+      <Measurement BaseKV="0" Magnitude="1.05" Angle="0" MagnitudeKey="10" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="5f315d4b-782c-4811-95e4-0761bbef112c">
+      <Measurement BaseKV="0" Magnitude="0.9687" Angle="0" MagnitudeKey="11" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="652b34ac-4085-44d3-afaf-4217d460331e">
+      <Measurement BaseKV="0" Magnitude="0.97927" Angle="0" MagnitudeKey="12" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="b4f674ea-abed-484f-838a-379124268c61">
+      <Measurement BaseKV="0" Magnitude="0.93721" Angle="0" MagnitudeKey="13" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="1b3999cc-8189-462d-a305-9a6d058a51cc">
+      <Measurement BaseKV="0" Magnitude="0.97047" Angle="0" MagnitudeKey="14" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="850d1da3-e3a2-4d5c-8b7b-dcf1ec215514">
+      <Measurement BaseKV="0" Magnitude="0.96337" Angle="0" MagnitudeKey="15" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="97cc5d9c-dbc2-403c-a86c-95b9251c6fd8">
+      <Measurement BaseKV="0" Magnitude="0.96434" Angle="0" MagnitudeKey="16" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="f829ab3e-d6a7-41c1-8537-7ca78e797dee">
+      <Measurement BaseKV="0" Magnitude="0.98719" Angle="0" MagnitudeKey="17" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="cb5137cf-67a2-4724-acf4-5ec693e1cad5">
+      <Measurement BaseKV="0" Magnitude="0.973" Angle="0" MagnitudeKey="18" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="102991f1-9e30-4a19-addf-f8840ea0a262">
+      <Measurement BaseKV="0" Magnitude="0.96104" Angle="0" MagnitudeKey="19" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="a2d731fc-8193-4f2d-ae30-a01694344c14">
+      <Measurement BaseKV="0" Magnitude="0.93273" Angle="0" MagnitudeKey="20" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="3c42e0c6-cf68-4971-b64f-0312b1a3beb2">
+      <Measurement BaseKV="0" Magnitude="0.92292" Angle="0" MagnitudeKey="21" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="46aa69a0-4fb0-4e63-9755-0f1f4dae845e">
+      <Measurement BaseKV="0" Magnitude="0.93494" Angle="0" MagnitudeKey="22" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="b8737e27-2029-41ff-bcab-003cee9bdc67">
+      <Measurement BaseKV="0" Magnitude="0.98541" Angle="0" MagnitudeKey="23" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="75fadc27-2be9-42db-9a37-aa03736ad74e">
+      <Measurement BaseKV="0" Magnitude="0.992" Angle="0" MagnitudeKey="24" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="e26f1eb1-f838-4cc6-b5b5-0732c1ce2021">
+      <Measurement BaseKV="0" Magnitude="1.05" Angle="0" MagnitudeKey="25" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2c7b974d-5519-422e-8433-5adf16933f2f">
+      <Measurement BaseKV="0" Magnitude="1.015" Angle="0" MagnitudeKey="26" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="e4c36469-9892-49db-9f54-d3adf4c9c208">
+      <Measurement BaseKV="0" Magnitude="0.968" Angle="0" MagnitudeKey="27" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="9309d8ee-95e8-43ec-89f5-897d859a8b04">
+      <Measurement BaseKV="0" Magnitude="0.95384" Angle="0" MagnitudeKey="28" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="fda19905-6eba-498c-889f-363d089d3b76">
+      <Measurement BaseKV="0" Magnitude="0.9584" Angle="0" MagnitudeKey="29" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="9533f8bb-76df-43bb-9b8e-ee11b654bd6a">
+      <Measurement BaseKV="0" Magnitude="0.96027" Angle="0" MagnitudeKey="30" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="e8f2b45b-9eda-4504-a5e6-2a90f4036939">
+      <Measurement BaseKV="0" Magnitude="0.967" Angle="0" MagnitudeKey="31" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8f40ca9c-89ed-4afb-9a2c-c159d084ada0">
+      <Measurement BaseKV="0" Magnitude="0.963" Angle="0" MagnitudeKey="32" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="0294bb82-b569-48f4-985d-ff79dfbd384b">
+      <Measurement BaseKV="0" Magnitude="0.94703" Angle="0" MagnitudeKey="33" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="dd778f2a-a37b-4ec3-8185-e00453e51763">
+      <Measurement BaseKV="0" Magnitude="0.97033" Angle="0" MagnitudeKey="34" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="327cc756-5365-47f5-b49a-39ca69d907e9">
+      <Measurement BaseKV="0" Magnitude="0.9654" Angle="0" MagnitudeKey="35" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="35e2cf1a-8276-49d8-bf4c-949240373074">
+      <Measurement BaseKV="0" Magnitude="0.96643" Angle="0" MagnitudeKey="36" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="7a01b111-0ae5-45e4-89be-31293ef41cbe">
+      <Measurement BaseKV="0" Magnitude="0.97601" Angle="0" MagnitudeKey="37" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="0ef01714-dc1b-4cc0-9a56-1bc1c4c50e6a">
+      <Measurement BaseKV="0" Magnitude="0.94053" Angle="0" MagnitudeKey="38" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="0b38dc84-df94-4084-95df-287ab154ff69">
+      <Measurement BaseKV="0" Magnitude="0.95604" Angle="0" MagnitudeKey="39" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="7fce76d5-3c0f-4a84-b285-df7716256987">
+      <Measurement BaseKV="0" Magnitude="0.97" Angle="0" MagnitudeKey="40" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="53593bb0-2996-4c71-a6d3-780a29b919bf">
+      <Measurement BaseKV="0" Magnitude="0.9557" Angle="0" MagnitudeKey="41" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8cf0aa71-12ed-4c67-8b66-a4638ff200d4">
+      <Measurement BaseKV="0" Magnitude="0.97" Angle="0" MagnitudeKey="42" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="1dfb1b98-d23a-4bc9-8ac4-3550c275a17f">
+      <Measurement BaseKV="0" Magnitude="0.93274" Angle="0" MagnitudeKey="43" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="282ea54f-aab0-4333-abf5-3baf2a34c2cb">
+      <Measurement BaseKV="0" Magnitude="0.93148" Angle="0" MagnitudeKey="44" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="54044f50-b0dc-4c56-bd33-fc00caededbe">
+      <Measurement BaseKV="0" Magnitude="0.94157" Angle="0" MagnitudeKey="45" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="1a4f949d-1067-4fe4-ad8e-455e59542b63">
+      <Measurement BaseKV="0" Magnitude="1" Angle="0" MagnitudeKey="46" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="6fe51bc7-eca7-4e6e-8041-8e6e61a48c47">
+      <Measurement BaseKV="0" Magnitude="1.0076" Angle="0" MagnitudeKey="47" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8737bbb6-8bcd-4a5f-9778-03aa584d120f">
+      <Measurement BaseKV="0" Magnitude="0.9986" Angle="0" MagnitudeKey="48" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="de08b5a5-c151-4824-81ca-7160dd31528b">
+      <Measurement BaseKV="0" Magnitude="1.015" Angle="0" MagnitudeKey="49" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="ba35a77a-a432-45b0-bb64-e058600b8932">
+      <Measurement BaseKV="0" Magnitude="0.98652" Angle="0" MagnitudeKey="50" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="81a6370a-2383-4e61-874a-5bee0adb76bf">
+      <Measurement BaseKV="0" Magnitude="0.94112" Angle="0" MagnitudeKey="51" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="97738018-7bc0-403c-a6d4-9b774b9c2429">
+      <Measurement BaseKV="0" Magnitude="0.92681" Angle="0" MagnitudeKey="52" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="49fb5e93-9a6c-40cb-9930-5f6ba98fa650">
+      <Measurement BaseKV="0" Magnitude="0.92184" Angle="0" MagnitudeKey="53" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="f6481569-5ae2-40a6-a640-1604966cf595">
+      <Measurement BaseKV="0" Magnitude="0.955" Angle="0" MagnitudeKey="54" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="f3b23995-9c84-47f1-b269-9f7073dd1f0b">
+      <Measurement BaseKV="0" Magnitude="0.952" Angle="0" MagnitudeKey="55" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="658a7619-f5c7-448b-b32a-914ffc06f952">
+      <Measurement BaseKV="0" Magnitude="0.95339" Angle="0" MagnitudeKey="56" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8a447b09-3945-4112-b8f8-4eab966fc844">
+      <Measurement BaseKV="0" Magnitude="0.96052" Angle="0" MagnitudeKey="57" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="028bdf6d-ad2e-495d-9ed3-1f65da3c4547">
+      <Measurement BaseKV="0" Magnitude="0.94116" Angle="0" MagnitudeKey="58" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="658e2df7-c1e2-446d-b6a2-bcfd51ecd261">
+      <Measurement BaseKV="0" Magnitude="0.985" Angle="0" MagnitudeKey="59" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="59917d36-e120-42b0-b2ae-af20abb1ed5c">
+      <Measurement BaseKV="0" Magnitude="0.99141" Angle="0" MagnitudeKey="60" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="c940ada8-cf63-40cc-bd25-fa4077f5b906">
+      <Measurement BaseKV="0" Magnitude="0.995" Angle="0" MagnitudeKey="61" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2c3ce367-7c24-46fe-9cf6-2f9c96d522d4">
+      <Measurement BaseKV="0" Magnitude="0.998" Angle="0" MagnitudeKey="62" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="218c63f5-6591-4b57-a48b-d868fd042b78">
+      <Measurement BaseKV="0" Magnitude="0.96864" Angle="0" MagnitudeKey="63" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="74e37b1f-c3c7-4a0d-8bf6-758235bd6ef3">
+      <Measurement BaseKV="0" Magnitude="0.98363" Angle="0" MagnitudeKey="64" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="7ca054f4-2d2d-4492-bd21-dd45005ce559">
+      <Measurement BaseKV="0" Magnitude="1.005" Angle="0" MagnitudeKey="65" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="5f557193-960a-468f-9e2f-64c73836552f">
+      <Measurement BaseKV="0" Magnitude="1.05" Angle="0" MagnitudeKey="66" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8e7ff890-748f-412c-b113-41e8e6fb488c">
+      <Measurement BaseKV="0" Magnitude="1.013" Angle="0" MagnitudeKey="67" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="21d41656-a19c-4fd7-86f8-c671b6b0a381">
+      <Measurement BaseKV="0" Magnitude="0.99865" Angle="0" MagnitudeKey="68" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="0b558eee-4de1-4a4d-81a7-5ce0022ea60b">
+      <Measurement BaseKV="0" Magnitude="1.035" Angle="0" MagnitudeKey="69" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="f8981597-6072-4787-b9a6-c91e1d01e2bf">
+      <Measurement BaseKV="0" Magnitude="0.9838" Angle="0" MagnitudeKey="70" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="5d6cf711-304d-4f95-8d1c-a429ea77caba">
+      <Measurement BaseKV="0" Magnitude="0.98586" Angle="0" MagnitudeKey="71" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="abb8a7dc-4838-4f47-b6b2-f2376658e2fb">
+      <Measurement BaseKV="0" Magnitude="0.98" Angle="0" MagnitudeKey="72" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="51f46a0c-5687-49c4-8d3e-39cde2068bd2">
+      <Measurement BaseKV="0" Magnitude="0.991" Angle="0" MagnitudeKey="73" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="5b2bb168-78d0-4207-8b0f-000c54156a8f">
+      <Measurement BaseKV="0" Magnitude="0.93912" Angle="0" MagnitudeKey="74" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="325126e7-7f3e-45f8-b496-977d894c50e0">
+      <Measurement BaseKV="0" Magnitude="0.93716" Angle="0" MagnitudeKey="75" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="a2da88b3-876d-4d8b-bce8-f036c0d478bb">
+      <Measurement BaseKV="0" Magnitude="0.89556" Angle="0" MagnitudeKey="76" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="18a1caf0-e9a5-4949-a536-1a1ef82bb081">
+      <Measurement BaseKV="0" Magnitude="0.94012" Angle="0" MagnitudeKey="77" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="4b7c55fb-0b6b-4cd0-af13-81dce934aca5">
+      <Measurement BaseKV="0" Magnitude="0.92965" Angle="0" MagnitudeKey="78" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="c75bc7b3-64a1-4bc5-aa43-a2f676bc41ec">
+      <Measurement BaseKV="0" Magnitude="0.93104" Angle="0" MagnitudeKey="79" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="d9e52818-1924-410e-8f66-37580ccbdd67">
+      <Measurement BaseKV="0" Magnitude="0.997" Angle="0" MagnitudeKey="80" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="c3a7d641-89b9-4e5a-885e-5e4c16924b2d">
+      <Measurement BaseKV="0" Magnitude="0.97851" Angle="0" MagnitudeKey="81" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="de0a63f0-3177-4e73-a748-713279c1869a">
+      <Measurement BaseKV="0" Magnitude="0.84746" Angle="0" MagnitudeKey="82" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8c2019b8-e23b-4504-9211-0ac3fa80b5d3">
+      <Measurement BaseKV="0" Magnitude="0.83823" Angle="0" MagnitudeKey="83" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="fddc85dc-b999-4aba-9e13-1a1836c7b653">
+      <Measurement BaseKV="0" Magnitude="0.86217" Angle="0" MagnitudeKey="84" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="640cfa37-a368-463f-9747-50c7b52729bd">
+      <Measurement BaseKV="0" Magnitude="0.901" Angle="0" MagnitudeKey="85" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="1546816f-1b86-4321-882f-ecea34c33623">
+      <Measurement BaseKV="0" Magnitude="0.92002" Angle="0" MagnitudeKey="86" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="37ba7217-9b69-43cf-ac52-f4292a6bdb57">
+      <Measurement BaseKV="0" Magnitude="1.015" Angle="0" MagnitudeKey="87" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="ba2bb38d-3095-46d1-994b-8a622fea0a6b">
+      <Measurement BaseKV="0" Magnitude="0.93144" Angle="0" MagnitudeKey="88" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="9e1bc30c-7f72-4d4f-970b-74e7ec65cf01">
+      <Measurement BaseKV="0" Magnitude="1.005" Angle="0" MagnitudeKey="89" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="c84c8bd8-f586-4a57-aee0-81aa00c73a5b">
+      <Measurement BaseKV="0" Magnitude="0.985" Angle="0" MagnitudeKey="90" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="6ff8ba82-54fa-40ef-9b68-111e22d318e5">
+      <Measurement BaseKV="0" Magnitude="0.98" Angle="0" MagnitudeKey="91" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2e0f7686-a1a2-4052-a504-72104c7be01b">
+      <Measurement BaseKV="0" Magnitude="0.94248" Angle="0" MagnitudeKey="92" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="683e5c80-12f8-46b9-bf13-46005a17c371">
+      <Measurement BaseKV="0" Magnitude="0.89263" Angle="0" MagnitudeKey="93" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="e9f92ff3-75d7-4c9d-bb3b-618c39c0f9e8">
+      <Measurement BaseKV="0" Magnitude="0.88447" Angle="0" MagnitudeKey="94" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="344dc603-8bed-43f2-b7bb-cc36dd57da76">
+      <Measurement BaseKV="0" Magnitude="0.84895" Angle="0" MagnitudeKey="95" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="4bad38d5-256d-4eb8-ad4c-2c5bcaa79fa4">
+      <Measurement BaseKV="0" Magnitude="0.86509" Angle="0" MagnitudeKey="96" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="682325e4-7543-43de-9854-89fbd8a55c79">
+      <Measurement BaseKV="0" Magnitude="0.91775" Angle="0" MagnitudeKey="97" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="261bf923-25ee-4192-a682-e91112d1e7a3">
+      <Measurement BaseKV="0" Magnitude="0.95941" Angle="0" MagnitudeKey="98" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="8f9047a5-ca46-472f-bcfb-5287959e5007">
+      <Measurement BaseKV="0" Magnitude="1.01" Angle="0" MagnitudeKey="99" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="699dce96-d59d-41ed-a426-2fedba8f0f7b">
+      <Measurement BaseKV="0" Magnitude="0.98119" Angle="0" MagnitudeKey="100" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="da3978f6-ccc7-44b6-91ac-c3d8a04a0277">
+      <Measurement BaseKV="0" Magnitude="0.92713" Angle="0" MagnitudeKey="101" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="620e3c1f-9a94-48c8-88a9-994539fb752c">
+      <Measurement BaseKV="0" Magnitude="0.93144" Angle="0" MagnitudeKey="102" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="792cabbc-f58c-4287-b7f3-683038903d83">
+      <Measurement BaseKV="0" Magnitude="0.98101" Angle="0" MagnitudeKey="103" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="9f89826a-f679-4bb0-9aa5-d323066a0bc0">
+      <Measurement BaseKV="0" Magnitude="0.9567" Angle="0" MagnitudeKey="104" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="3f234637-a53c-41f1-9198-44c67c5494f8">
+      <Measurement BaseKV="0" Magnitude="0.95093" Angle="0" MagnitudeKey="105" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="92cc828c-e9da-4f5a-bb54-f33d5067938b">
+      <Measurement BaseKV="0" Magnitude="0.9357" Angle="0" MagnitudeKey="106" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2298e5df-8f8a-42f4-b004-600aaec20661">
+      <Measurement BaseKV="0" Magnitude="0.952" Angle="0" MagnitudeKey="107" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="895ab50d-c9c8-4653-b224-dc12ca0b7d8c">
+      <Measurement BaseKV="0" Magnitude="0.95511" Angle="0" MagnitudeKey="108" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="1e9a6b83-2ac1-4e4d-9241-c4b22c8b42ab">
+      <Measurement BaseKV="0" Magnitude="0.95751" Angle="0" MagnitudeKey="109" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="b38eebc5-9d27-4056-a734-6f449edf2c89">
+      <Measurement BaseKV="0" Magnitude="0.97195" Angle="0" MagnitudeKey="110" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="46f79f01-af9f-4ab6-a1cc-fc89138ca2e6">
+      <Measurement BaseKV="0" Magnitude="0.98" Angle="0" MagnitudeKey="111" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="6f5dad85-6a40-4eaf-b414-0e6b74f5a3e2">
+      <Measurement BaseKV="0" Magnitude="0.975" Angle="0" MagnitudeKey="112" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="14397749-1231-4b9f-8789-68abbdfbada1">
+      <Measurement BaseKV="0" Magnitude="0.993" Angle="0" MagnitudeKey="113" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="f2dc3ec5-a8d4-48bf-95b1-670e0c9e5182">
+      <Measurement BaseKV="0" Magnitude="0.95441" Angle="0" MagnitudeKey="114" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="1b9624b9-871e-464c-bd02-f8aa8f2d2087">
+      <Measurement BaseKV="0" Magnitude="0.95388" Angle="0" MagnitudeKey="115" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="be8255c6-50a3-4246-a210-7b2111372f02">
+      <Measurement BaseKV="0" Magnitude="1.005" Angle="0" MagnitudeKey="116" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="3924d9e9-f4b7-4097-ac18-f7a681d83c1f">
+      <Measurement BaseKV="0" Magnitude="0.94324" Angle="0" MagnitudeKey="117" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+    <Phasor Uid="2dab352a-c768-44dc-9423-6033a21a7e76">
+      <Measurement BaseKV="0" Magnitude="0.90417" Angle="0" MagnitudeKey="118" AngleKey="Undefined" Type="V" Variance="0" RCF="0" PACF="0" Calibrated="false" />
+    </Phasor>
+  </Voltages>
+  <ShuntBreakers>
+    <CapBank CapBankSwitchStatus="Close" CapBankSwitchKey="Cap1" />
+    <CapBank CapBankSwitchStatus="Close" CapBankSwitchKey="Cap2" />
+    <CapBank CapBankSwitchStatus="Close" CapBankSwitchKey="Cap3" />
+    <CapBank CapBankSwitchStatus="Close" CapBankSwitchKey="Cap4" />
+    <CapBank CapBankSwitchStatus="Close" CapBankSwitchKey="Cap5" />
+    <CapBank CapBankSwitchStatus="Open" CapBankSwitchKey="Cap6" />
+  </ShuntBreakers>
+</Network>

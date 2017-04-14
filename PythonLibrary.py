@@ -7,6 +7,10 @@
 #-----------------------------------------------------------------------#
 
 import csv,difflib,os,operator
+import matplotlib.pyplot as plt
+import numpy as np
+import scipy.stats as stats
+
 
 def writeRowToCsv(csvfileName,data):
     ########
@@ -62,6 +66,20 @@ def ComputeSimilarityTwoLists(s1,s2):
 def NormalizeList(data):
     dataNormalized = [operator.truediv((float(i) - min(data)),(max(data) - min(data))) for i in data]
     return dataNormalized
+
+########################
+# Python Plot
+########################
+
+def plotDistribution(h):
+    fit = stats.norm.pdf(h, np.mean(h), np.std(h))  #this is a fitting indeed
+
+    pl.plot(h,fit,'-o')
+
+    pl.hist(h,normed=True)      #use this to draw histogram of your data
+
+    pl.show()   
+
 
 ########################
 # python run matlab

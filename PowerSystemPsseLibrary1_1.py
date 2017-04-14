@@ -38,6 +38,11 @@ def findAllLoadBuses(bus_num):
     load_bus = load_bus[0]
     return load_bus
 
+def findBusesArea(buses):
+    psspy.bsys(sid=1, numbus=len(buses), buses=buses)
+    ierr,buses_area = psspy.abusint(1, 1, ['AREA'])
+    buses_area = buses_area[0]
+    return buses_area
 
 def findAllBusType(bus_num):
     psspy.bsys(sid=1, numbus=len(bus_num), buses=bus_num)
@@ -60,7 +65,7 @@ def findFixedShunt(bus):
     psspy.bsys(sid = 1,numbus = len(bus), buses = bus)
     ierr,bus_fixedshunt = psspy.afxshuntcplx(1,1,['SHUNTACT'])
     bus_fixedshunt = bus_fixedshunt[0]
-    bus_fixedshunt = [x*1j for x in bus_fixedshunt]
+    # bus_fixedshunt = [x*1j for x in bus_fixedshunt]
 
     ierr,busNumber = psspy.afxshuntint(1,1,['NUMBER'])
     busNumber = busNumber[0]
@@ -86,7 +91,20 @@ def getGenReactivePowerMin(busNumber):
     ierr,reactivePowerMin = psspy.agenbusreal(0,1,'QMIN')
     return reactivePowerMin[0]
 
-
+def busesConnectedToThisBus(startbus):
+    buslist = []
+    ierr = psspy.inibrn(startbus, 2)
+    iteration = 0
+    if ierr < 1:
+        while iteration < 100:
+            ierr, foundbus, ickt = psspy.nxtbrn(startbus)
+            if ierr < 1:
+                buslist.append(foundbus)
+                buslist = list(set(buslist))
+            else:
+                break
+            iteration += 1
+    return buslist
 
 # endregion
 
@@ -113,7 +131,7 @@ def changeOwnerNumber(clusters):
         clusters is a dictionary
         Changes the bus owner number based on clusters' key
     """
-    area_num = 1 # 1 is the default area_num. area_num starts from 2
+    area_num = 2 # 1 is the default area_num. area_num starts from 2
     for key in clusters.keys():
         for bus in clusters[key]:
             ierr = psspy.bus_data_3(bus, intgar2 = area_num)
@@ -245,5 +263,27 @@ def QVAnalysis(CASE,ireg,activateplot):
         plt.grid()
 
     return Qmin,Vmin,busGenExhausted
+
+
+def reduceModel(zonebuses):
+    # Reduce the model
+    psspy.bsys(sid=1, numbus=len(zonebuses), buses=zonebuses)
+    psspy.gnet(sid=1, all=0)
+    psspy.island()
+    psspy.fdns(options=[1, 0, 1, 1, 1, 0, 0, 0])
+    psspy.eeqv(sid=1, all=0, status=[0, 0, 0, 0, 1, 0], dval1=0)
+    psspy.island()
+    ierr = psspy.fdns(options=[1, 0, 1, 1, 1, 0, 0, 0])
+    ival = psspy.solved()
+    reducedModelName = "reduced"
+    print "ival equal to "
+    print ival
+    if ival == 0:
+        psspy.save(reducedModelName)
+    else:
+        return None
+    return reducedModelName
+
+
 
 #endregion
